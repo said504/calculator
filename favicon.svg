@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="favShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- App Icon Squircle Container (25% radius = 16px) -->
+  <rect width="64" height="64" rx="16" fill="url(#favGrad)" filter="url(#favShadow)"/>
+  
+  <!-- 3 Progression Bars -->
+  <!-- Base Y = 50 -->
+  <rect x="14" y="35" width="9" height="15" rx="3" fill="#FFFFFF"/>
+  <rect x="27" y="26" width="9" height="24" rx="3" fill="#FFFFFF"/>
+  <rect x="40" y="17" width="9" height="33" rx="3" fill="#FBBF24"/>
+  
+  <!-- Progression Trend Line -->
+  <path d="M18.5 31 L31.5 22 L44.5 13" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Coordinate Dots -->
+  <circle cx="18.5" cy="31" r="3" fill="#FFFFFF"/>
+  <circle cx="31.5" cy="22" r="3" fill="#FFFFFF"/>
+  <circle cx="44.5" cy="13" r="3.5" fill="#FBBF24"/>
+</svg>

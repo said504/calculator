@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 64" width="460" height="64" fill="none">
+  <defs>
+    <linearGradient id="logoIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="logoShadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#0F172A" flood-opacity="0.3"/>
+    </filter>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&amp;display=swap');
+      .logo-wordmark {
+        font-family: 'Plus Jakarta Sans', 'Poppins', -apple-system, sans-serif;
+        font-weight: 800;
+        font-size: 32px;
+        letter-spacing: -0.03em;
+      }
+      .logo-sub {
+        font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+        font-weight: 500;
+        font-size: 13.5px;
+        letter-spacing: 0.01em;
+      }
+      .seq-fill { fill: #FFFFFF; }
+      @media (prefers-color-scheme: light) {
+        .seq-on-light { fill: #1E1B4B; }
+      }
+    </style>
+  </defs>
+
+  <!-- Left Icon: Squircle Container (radius 25% = 16px) -->
+  <g transform="translate(0, 0)">
+    <rect width="64" height="64" rx="16" fill="url(#logoIconGrad)" filter="url(#logoShadow)"/>
+    
+    <!-- 3 Progression Bars -->
+    <rect x="14" y="35" width="9" height="15" rx="3" fill="#FFFFFF"/>
+    <rect x="27" y="26" width="9" height="24" rx="3" fill="#FFFFFF"/>
+    <rect x="40" y="17" width="9" height="33" rx="3" fill="#FBBF24"/>
+    
+    <!-- Progression Trend Line -->
+    <path d="M18.5 31 L31.5 22 L44.5 13" stroke="#FBBF24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Coordinate Dots -->
+    <circle cx="18.5" cy="31" r="3" fill="#FFFFFF"/>
+    <circle cx="31.5" cy="22" r="3" fill="#FFFFFF"/>
+    <circle cx="44.5" cy="13" r="3.5" fill="#FBBF24"/>
+  </g>
+
+  <!-- Right: Wordmark + Subtitle -->
+  <g transform="translate(80, 0)">
+    <text x="0" y="36" class="logo-wordmark">
+      <tspan class="seq-fill">Seq</tspan><tspan fill="#FBBF24">Math</tspan>
+    </text>
+    <text x="0" y="55" class="logo-sub" fill="rgba(255, 255, 255, 0.85)">
+      Kalkulator Barisan &amp; Deret Aritmetika dan Geometri
+    </text>
+  </g>
+</svg>
